@@ -1,5 +1,6 @@
+
 <template>
-  <div id="app">init</div>
+  <div>init</div>
 </template>
 
 <script>

@@ -1,6 +1,14 @@
 import Vue from 'vue';
-import Router from 'vue-router';
-Vue.use(Router);
+import VueRouter from 'vue-router';
+
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+  routes: [
+      { path: '/', component: app },
+      { path: '*', redirect: '/' }
+  ]
+});
 
 export default new Router({
   mode: 'history',

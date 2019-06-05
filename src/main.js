@@ -1,14 +1,23 @@
 
 import Vue from 'vue';
-import App from './App';
-import router from './router';
+import VueRouter from 'vue-router';
+import Home from './container/home';
+import List from './container/list';
 
+Vue.use(VueRouter);
 Vue.config.productionTip = false;
+
+const router = new VueRouter({
+  routes: [
+    { path: '/', component: Home },
+    { path: '/list', component: List },
+    { path: '*', redirect: '/' }
+  ]
+});
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { App },
-  template: '<App/>'
+  render: h => h(Home)
 });
