@@ -15,22 +15,10 @@ module.exports = {
     'vue'
   ],
   rules: {
-    // "indent": [
-    //   2,
-    //   4
-    // ],
-    "linebreak-style": [
-      2,
-      "unix"
-    ],
-    "quotes": [
-      2,
-      "single"
-    ],
-    "semi": [
-      2,
-      "always"
-    ],
+    'indent': 'off',
+    "linebreak-style": 'off',
+    "quotes": 'off',
+    "semi": 'off',
     "one-var": [
       0,
       "always"

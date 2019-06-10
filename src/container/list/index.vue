@@ -1,7 +1,8 @@
 
 <template>
-  <div>init</div>
+    <div>list</div>
 </template>
 
 <script>
+export default {};
 </script>
