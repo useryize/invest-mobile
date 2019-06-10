@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 import App from './container/index.vue';
 import Home from './container/home';
 import List from './container/list';
+import 'lib-flexible';
 
 Vue.use(VueRouter);
 Vue.config.productionTip = false;
